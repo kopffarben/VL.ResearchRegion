@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="GVXFzHOdzloLahoa0cW9rn" LanguageVersion="2025.7.0-0402-gd84c627862" Version="0.128">
+  <NugetDependency Id="Muo1Qpnou5rN4X2gahrROc" Location="VL.CoreLib" Version="2025.7.0-0402-gd84c627862" />
+  <Patch Id="PBEZH1yLLfwP2tvY7e6akv">
+    <Canvas Id="NMFP1DKFvwULW2eLJXzhCp" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="J7JGKrWhrEyLi5IF5WZKYf">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="EtWOpCtijpVMPyOXjiPIR6">
+        <Canvas Id="S5FBeOI0inxQNI6f2nk82F" CanvasType="Group">
+          <Node Bounds="224,143,143,115" Id="RZNkMkmyxRUNXKp5lkNjUv">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="RegionTest.csproj">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="CSharpStatefullDelegat" />
+            </p:NodeReference>
+            <Pin Id="QmQpHuzlaBgQCUitwpRRzW" Name="Update" Kind="ApplyPin" />
+            <Patch Id="AfCSsHK4Ug3N0c8px97kBk" ManuallySortedPins="true">
+              <Patch Id="C9KSJarPb4PPqyMYZD55Sd" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="DtLccaVuIGZMt2Tk1H6L47" Name="Invoke" ManuallySortedPins="true">
+                <Pin Id="KInQCTEWH70MrqkUjbTqee" Name="Input One" Kind="InputPin" />
+                <Pin Id="NpuqNwUGKsmONwtTbg4gL3" Name="Input Two" Kind="InputPin" />
+                <Pin Id="RVL06iMzVnYQS5SbQtQU23" Name="Result" Kind="OutputPin" />
+              </Patch>
+              <Patch Id="HsvUIDOz8iyLBUcpF9c1jx" Name="Dispose" ManuallySortedPins="true" />
+              <ControlPoint Id="OMAd585qY7jOLuc2NJVJcg" Bounds="238,161" />
+              <ControlPoint Id="LUW2GsPVlaiNGOqvP51ow9" Bounds="298,161" />
+              <ControlPoint Id="JCvz09LlQjlOBVw93ePi3t" Bounds="238,241" />
+            </Patch>
+          </Node>
+        </Canvas>
+        <Patch Id="CkAeP6oz55nPUJqmQdteiT" Name="Create" />
+        <Patch Id="U8dXhFC7ytsOctbCkSZYSo" Name="Update" />
+        <ProcessDefinition Id="V79q22szPt8Qbtkjegsv9d">
+          <Fragment Id="GXq785neGuxLzA7OiaSxkm" Patch="CkAeP6oz55nPUJqmQdteiT" Enabled="true" />
+          <Fragment Id="Kj8tEH8F96XQSBeBAMYP80" Patch="U8dXhFC7ytsOctbCkSZYSo" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="RIDLF4z5nGLPgyjzlyaWj8" Ids="KInQCTEWH70MrqkUjbTqee,OMAd585qY7jOLuc2NJVJcg" IsHidden="true" />
+        <Link Id="DynmWd7CsZQP5UOBh2RO5w" Ids="NpuqNwUGKsmONwtTbg4gL3,LUW2GsPVlaiNGOqvP51ow9" IsHidden="true" />
+        <Link Id="UUjXUMQtT7WPhkaZTH4kLz" Ids="JCvz09LlQjlOBVw93ePi3t,RVL06iMzVnYQS5SbQtQU23" IsHidden="true" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="TnY0KfQ7TqKNOUJsHWiHm2" Location="VL.Skia" Version="2025.7.0-0402-gd84c627862" />
+  <ProjectDependency Id="N0vSlIgOFSALIV8bJe8Eu4" Location="./csharp/RegionTest/RegionTest.csproj" />
+</Document>
